@@ -17,7 +17,9 @@
 		
 		<?php
 					$pulp = $_GET['pulp'];
-					 $files = glob("$pulp/*.*");?>
+					$files = glob("$pulp/*.{jpg,jpeg,gif,png}", GLOB_BRACE);
+					
+     					 ?>
 		
 		
 		<div id="container" class="container">	
@@ -25,14 +27,15 @@
 			<div class="menu-panel">
 				<h3>Table of Contents</h3>
 				<ul id="menu-toc" class="menu-toc">
-					<li class=""><a href="#cover">Cover</a></li>
-					<?php for ($i=1; $i<count($files); $i++)
+					<li class=""><a href="#front_cover">Front Cover</a></li>
+					<?php for ($i=2; $i<count($files); $i++)
 				{
 					$num = $files[$i];
-					echo'<li class=""><a href="#page'.$i.'">Page - '.$i.'</a></li>';
+					echo'<li class=""><a href="#page'.$i.'">Page-'.$i.'</a></li>';
 					
 					}
 				?>
+					<li class=""><a href="#back_cover">Back Cover</a></li>
 				</ul>
 			</div>
 
@@ -43,7 +46,7 @@
 				<?php for ($i=0; $i<count($files); $i++)
 				{
 					$num = $files[$i];
-					echo'<div class="bb-item" id="item1"><div class="content"><div class="scroller">';
+					echo'<div class="bb-item" id="#page'.$i.'"><div class="content"><div class="scroller">';
 					echo'<img class="big-images" src="'.$num.'"/>';
 					echo'</div></div></div>';
 				}
