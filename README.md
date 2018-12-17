@@ -1,4 +1,4 @@
-# FlippyBook
+# FlippyBook  
 Built using the Fullscreen Pageflip Layout from https://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/.  
 This builds flip books by using php blob to display a directorie's image files, along with creating a Table of Contents.  
 ### Examples:
