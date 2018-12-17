@@ -50,6 +50,8 @@ h2{
 .menu-panel h3{
 	text-align: center;
 	font-size: 22px;
+	padding: 10px 0 0 0;
+	line-height: 1.0em;
 }
 
 .menu-panel{
@@ -104,6 +106,10 @@ h2{
 	right: 0;
 	border-radius: 6px 0 0 6px;
 	}
+	
+.scroller{
+	background-color: transparent;
+}
 
 .scroller.copy{
 	max-width: 1200px;
@@ -130,6 +136,10 @@ h2{
     padding:0;
     margin-bottom: 1.25em;
     color: #000;
+}
+
+.bb-item{
+	background-color: transparent;
 }
 
 .text-content{
