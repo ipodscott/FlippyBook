@@ -20,10 +20,36 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
 }
 
+.dl-link{
+	position: relative;
+	top:0;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 0 !important;
+}
+.dl-link a{
+	margin: 0;
+	padding: 0;
+	color: rgba(255, 255, 255, 0.6);
+	transition: all 0.5s;
+}
+
+.dl-link a:hover{
+	color: rgba(255, 255, 255, 1);
+}
+
 h2{
 	font-size: calc(28px + 6 * ((100vw - 320px) / 680)) !important;
 	margin: 0;
 	padding: 0;
+}
+
+.menu-panel h3{
+	text-align: center;
+	font-size: 22px;
 }
 
 .menu-panel{
