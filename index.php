@@ -27,7 +27,7 @@
 			<div class="menu-panel">
 				<h3>Table of Contents</h3>
 				<ul id="menu-toc" class="menu-toc">
-					<li class=""><a href="#front_cover">Front Cover</a></li>
+					<li class="menu-toc-current"><a href="#front_cover">Front Cover</a></li>
 					<?php for ($i=2; $i<count($files); $i++)
 				{
 					$num = $files[$i];
