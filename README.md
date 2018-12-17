@@ -8,7 +8,7 @@ http://www.wpwebos.com/pulps/?pulp=the_spirit_1946_01_06
 ### Instructions:
 This builds flip books by using php blob to display a directory's image files, along with creating a Table of Contents.  
 The directory to the image files is passed through a URL query string starting on line 18 of the index.php.  
-Using the php blob along with the wildcard supported image types will only allow supported images.  
+Using the php blob along with the wildcard file types array will only allow supported images within the directory.
    
 ``<?php``  
 `` $pulp = $_GET['pulp'];``  
