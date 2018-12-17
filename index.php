@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -32,7 +31,7 @@
 				{
 					$download = $downloads[$i];
 					
-					echo'<div class="dl-link"><a href="'.$download.'"><i class="material-icons">cloud_download</i></a></div>';
+					echo'<div class="dl-link"><a href="'.$download.'" download><i class="material-icons">cloud_download</i></a></div>';
 
 				}
 				?>
@@ -79,7 +78,6 @@
 		</div><!-- /container -->
 
 		
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="js/jquery.mousewheel.js"></script>
 		<script src="js/jquery.jscrollpane.min.js"></script>
