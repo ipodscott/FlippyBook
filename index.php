@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<title>Pulp Novel</title>
+		<title>Dieselpunk Industries Comic Book Library</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
@@ -16,16 +16,28 @@
 	<body>
 		
 		<?php
-					$pulp = $_GET['pulp'];
-					$files = glob("$pulp/*.{jpg,jpeg,gif,png}", GLOB_BRACE);
-					
+					$issue = $_GET['issue'];
+					$files = glob("$issue/*.{jpg,jpeg,gif,png}", GLOB_BRACE);
+					$downloads = glob("$issue/*.{zip,cbz,cbr}", GLOB_BRACE);
      					 ?>
 		
 		
 		<div id="container" class="container">	
 
 			<div class="menu-panel">
-				<h3>Table of Contents</h3>
+				
+				<h3>Table of Contents
+				
+					<?php for ($i=0; $i<count($downloads); $i++)
+				{
+					$download = $downloads[$i];
+					
+					echo'<div class="dl-link"><a href="'.$download.'"><i class="material-icons">cloud_download</i></a></div>';
+
+				}
+				?>
+				</h3>
+								
 				<ul id="menu-toc" class="menu-toc">
 					<li class="menu-toc-current"><a href="#front_cover">Front Cover</a></li>
 					<?php for ($i=2; $i<count($files); $i++)
