@@ -5,7 +5,8 @@ This builds flip books by using php blob to display a directorie's image files, 
 http://www.wpwebos.com/pulps/?pulp=fbi_detective_stories_v01_n03_1949_06  
 http://www.wpwebos.com/pulps/?pulp=the_spirit_1946_01_06
 ### Instructions:  
-The directory to the image files is passed via URL query string on line 18 of the index.php  
+The directory to the image files is passed through a URL query string starting on line 18 of the index.php.  
+Using the php blob along with the wildcard supported image types will only allow supported images. 
 ``<?php``  
 `` $pulp = $_GET['pulp'];``  
 `` $files = glob("$pulp/*.{jp2,jpg,jpeg,gif,png}", GLOB_BRACE);``  
