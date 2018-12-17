@@ -9,6 +9,6 @@ The directory to the image files is passed through a URL query string starting o
 Using the php blob along with the wildcard supported image types will only allow supported images.  
    
 ``<?php``  
->`` $pulp = $_GET['pulp'];``  
->`` $files = glob("$pulp/*.{jp2,jpg,jpeg,gif,png}", GLOB_BRACE);``  
+`` $pulp = $_GET['pulp'];``  
+`` $files = glob("$pulp/*.{jp2,jpg,jpeg,gif,png}", GLOB_BRACE);``  
 ``?> ``
