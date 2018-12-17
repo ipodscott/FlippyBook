@@ -15,7 +15,7 @@ Using the php blob along with the wildcard supported image types will only allow
 `` $files = glob("$pulp/*.{jp2,jpg,jpeg,gif,png}", GLOB_BRACE);``  
 ``?> ``  
 
-The TOC statrs he incrementation at 2 so the front and back cover so they can be titled manually.  
+On line 30 the TOC starts the incrementation at 2 so the front and back cover can titled manually and prevents the cover from have a title of 0.  
 
 ``<?php for ($i=2; $i<count($files); $i++)``  
 ``{``  
