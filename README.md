@@ -7,7 +7,7 @@ http://www.wpwebos.com/pulps/?pulp=the_spirit_1946_01_06
 ### Instructions  
 The directory of the image files is passed via URL query string on line 18 of the index.php  
 ``<?php
-			$pulp = $_GET['pulp'];
+			$pulp = $_GET['pulp'];  
 			$files = glob("$pulp/*.{jp2,jpg,jpeg,gif,png}", GLOB_BRACE);
 		?>
     ``
