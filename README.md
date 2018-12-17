@@ -3,8 +3,8 @@
 Built using the Fullscreen Pageflip Layout from https://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/.  
 The intent of this project was to make it easier to create web based pulp novel and comic book readers.    
 ### Examples:
-[Pulp Novel] http://www.wpwebos.com/pulps/?pulp=fbi_detective_stories_v01_n03_1949_06  
-[Comic Book] http://www.wpwebos.com/pulps/?pulp=the_spirit_1946_01_06
+[Pulp Novel](http://www.wpwebos.com/pulps/?pulp=fbi_detective_stories_v01_n03_1949_06)  
+[Comic Book](http://www.wpwebos.com/pulps/?pulp=the_spirit_1946_01_06)
 ### Instructions:
 This builds flip books by using php blob to display a directory's image files, along with creating a Table of Contents.  
 The directory to the image files is passed through a URL query string starting on line 18 of the index.php.  
