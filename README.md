@@ -1,7 +1,7 @@
 # FlippyBook  
 ### Summary:  
 Built using the Fullscreen Pageflip Layout from https://tympanus.net/codrops/2012/12/11/fullscreen-pageflip-layout/.  
-The intent of this project was to make it easier to create pulp novel and comic book scans easier to share and read.    
+The intent of this project was to make it easier to create web based pulp novel and comic book readers.    
 ### Examples:
 http://www.wpwebos.com/pulps/?pulp=fbi_detective_stories_v01_n03_1949_06  
 http://www.wpwebos.com/pulps/?pulp=the_spirit_1946_01_06
