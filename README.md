@@ -28,3 +28,5 @@ On line 30 the TOC starts the incrementation at 2 so the front and back cover ca
 ``?>``  
 ``<li class=""><a href="#back_cover">Back Cover</a></li>``  
 ``</ul>``
+### Download Link
+A download link will be available in the side menu beneath the Table of Contents title if a zip, cbz or cbr are in the same diretory as the images.
