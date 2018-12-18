@@ -96,16 +96,19 @@ h2{
 	top: calc(50% - 55px);
 	color: #fff;
 	z-index: 999999;
+	cursor: pointer;
 }
 	
 #bb-nav-prev{
 	left: 0;
 	border-radius: 0 6px 6px 0;
+	cursor: hand;
 }
 
 #bb-nav-next{
 	right: 0;
 	border-radius: 6px 0 0 6px;
+	cursor: hand;
 	}
 	
 .scroller{
