@@ -20,11 +20,6 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
 }
 
-
-.jspVerticalBar{
-	width: 3px;
-}
-
 .dl-link{
 	position: relative;
 	top:0;
@@ -114,7 +109,7 @@ h2{
 	}
 	
 .scroller{
-	background-color: transparent;
+	background-color: #333;
 }
 
 .scroller.copy{
@@ -127,11 +122,6 @@ h2{
 	padding: 40px 0 0 0;
 	height: calc(100vh - 40px);
 	overflow-y: scroll;
-}
-
-
-.jspDrag{
-	background-color: #000;
 }
 
 
