@@ -11,7 +11,7 @@
 		<link rel="manifest" href="site.webmanifest">
 		<meta name="msapplication-TileColor" content="#000000">
 		<meta name="theme-color" content="#000000">
-		<title>Dieselpunk Industries Pulp Magazine Library</title>
+		<title>Dieselpunk Industries Newsstand</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
@@ -48,8 +48,9 @@
 			
 			.load-content img{
 				width: calc(100% - 40px);
-				max-width: 500px;
+				max-width: 1000px;
 				opacity: 0;
+	
 			}
 			
 		</style>
@@ -66,35 +67,37 @@
 		
 		<div class="load-overlay">
 			<div class="load-content">
-				<img src="10_cents.svg">
+				<img src="newsstand.svg"/>
 			</div>
 		</div>
 		<div id="container" class="container">	
 
 			<div class="menu-panel">
 				
-				<h3>Table of Contents
-				
-					<?php for ($i=0; $i<count($downloads); $i++)
-				{
-					$download = $downloads[$i];
+				<div class="menu-header">
+					<h3>Table of Contents
 					
-					echo'<div class="dl-link"><a href="'.$download.'" download><i class="material-icons">cloud_download</i></a></div>';
-
-				}
-				?>
-				</h3>
+						<?php for ($i=0; $i<count($downloads); $i++)
+					{
+						$download = $downloads[$i];
+						
+						echo'<div class="dl-link"><a href="'.$download.'" download><i class="material-icons">cloud_download</i></a></div>';
+	
+					}
+					?>
+					</h3>
+				</div>
 								
 				<ul id="menu-toc" class="menu-toc">
-					<li class="menu-toc-current"><a href="#front_cover">Front Cover</a></li>
+					<li class="menu-toc-current" onclick="location.href="#page'.$i.'";">Front Cover</li>
 					<?php for ($i=2; $i<count($files); $i++)
 				{
 					$num = $files[$i];
-					echo'<li class=""><a href="#page'.$i.'">Page-'.$i.'</a></li>';
+					echo'<li class="" onclick="location.href="#page'.$i.'";">Page-'.$i.'</li>';
 					
 					}
 				?>
-					<li class=""><a href="#back_cover">Back Cover</a></li>
+					<li class="" onclick="location.href="#page'.$i.'";">Back Cover</li>
 				</ul>
 			</div>
 
@@ -105,9 +108,7 @@
 				<?php for ($i=0; $i<count($files); $i++)
 				{
 					$num = $files[$i];
-					echo'<div class="bb-item" id="#page'.$i.'"><div class="content"><div class="scroller">';
-					echo'<img class="big-images" src="'.$num.'"/>';
-					echo'</div></div></div>';
+					echo'<div class="bb-item" id="#page'.$i.'"><div class="content"><img class="big-images" src="'.$num.'"/></div></div>';
 				}
 				?>
 								

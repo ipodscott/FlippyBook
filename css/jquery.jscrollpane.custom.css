@@ -22,11 +22,11 @@
 .jspVerticalBar {
 	position: absolute;
 	top: 0px;
-	right: 1%;
+	right: 14px;
 	width: 2px;
 	height: 100%;
 	opacity: 0;
-	background-color: #000;
+	background-color: transparent;
 	-webkit-transition: opacity 0.2s linear;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .jspDrag {
-	background: #999;
+	background: #000;
 	position: relative;
 	box-shadow: none;
 	top: 0;

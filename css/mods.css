@@ -2,6 +2,7 @@ body{
 	background-color: #333;
 }
 
+
 .custom-nav{
 	display: block;
 	position: fixed;
@@ -60,37 +61,49 @@ h2{
 	font-size: 22px;
 	padding: 10px 0 10px 0;
 	line-height: 1.0em;
-	background-color: #680000;
 }
 
 .menu-panel{
-	background-color: #000;
+	background-color: #3c3c3c;
 	height: 100vh;
 	overflow-y: scroll;
+	box-shadow: inset 0px 0px 22px rgba(0, 0, 0, 0.89);
 }
 
-.menu-toc li a{
+.menu-panel div{
+	margin: 0;
+}
+
+.menu-header{
+	padding: 15px 0 15px 0;
 	background-color: #000;
+}
+
+.menu-toc li{
+	background-color: transparent;
 	transition: all 0.5s;
 	border: none;
 	font-size: 16px !important;
 	line-height: 1.25em;
 	padding: 20px 10px 20px 10px;
 	width: 100%;
+	color: #fff;
+	cursor: pointer;
 }
 
-.menu-toc-current a{
-	background-color: #3b3b3b !important;
+.menu-toc-current{
+	box-shadow: inset 0px 0px 22px rgba(0, 0, 0, 0.89);
+	background-color: #b30000 !important;
 }
 
-.menu-toc li a:hover{
+.menu-toc li:hover{
 	background-color: #000;
 }
 
 .nav-buttons{
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.3);
 	transition:all 0.5s;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.47);
 }
 
 .nav-buttons:hover{
@@ -101,10 +114,11 @@ h2{
 	position: fixed;
 	padding: 40px 10px 40px 10px;
 	font-size: 24px;
-	top: calc(50% - 55px);
+	top: calc(50% - 54px);
 	color: #fff;
 	z-index: 999999;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 	
 #bb-nav-prev{
@@ -121,6 +135,7 @@ h2{
 	
 .scroller{
 	background-color: #333;
+	padding: 0;
 }
 
 .scroller.copy{
@@ -153,13 +168,14 @@ h2{
 	background-color: #efefef;
 	display: block;
 	position: absolute;
-	top:0px;
+	top:0px;11
 	height: 100vh;
 	}
-	
+
 
 .big-images{
-	width:100%;
+	display: block;
+	position: relative;
+	width: 100%;
 	height: auto;
-	
-}
+	}
